@@ -8,19 +8,28 @@ body{
    
 }
 .home{
-    width: 1440px;
+    max-width:1440px ;
     height: 677px;
     background-color: rgba(45, 37, 160, 1);
 }
 .home:hover {
     background-color:#E02C6D;
-    transition: background-color 3s ease-in-out .8s;
+    transition: background-color 2s ease-in-out .8s;
 }
 .home:hover .side-text a{
     color:  #FFFFFF;
     background-color:   rgba(45, 37, 160, 1);
     transition: background-color 5s ease-in-out 2s, border-radius 5s ease-in-out 2s;
     border-radius: 20px;
+}
+.login-btn{
+    background-color: #E02C6D;
+    border-radius: 7px;
+}
+.login-btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 5px 8px;
 }
 /*----------------------- 
         menu bar
@@ -100,6 +109,9 @@ body{
     padding: 10px 24px;
    
 }
+.fas{
+    margin-left: 5px;
+}
 .side-text a:{
     color:  #FFFFFF;
     background-color:  #E02C6D;
@@ -108,7 +120,7 @@ body{
     width: 556px;
     height: 428px;
     margin-top: 49px;
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 /* -----------------------
     Player gallery area
@@ -224,4 +236,63 @@ main, footer{
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+}
+@media only screen and (max-width: 688px){
+    .menu-bar{
+        display: none;
+    }
+    header{
+        width: 100%;
+        background-color: rgba(45, 37, 160, 1);
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .side-text h1{
+        width: 278px;
+        height: 138px;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .half-side img{
+        width: 329px;
+        height: 259.17px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight{
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight-text{
+        width: 329px;
+        height: 299px;
+        margin: 24px 0px;
+    }
+    .highlight-side h3{
+        width: 292px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlight-side p{
+        width: 329px;
+        height: 143px;
+    }
+    .highlight-side img{
+        width: 328px;
+        height: 248px;
+        margin-left: 45px;
+    }
+    .footer-image img{
+        width: 220px;
+    }
+    .contact-link{
+        height: 32px;
+    }
+
+
 }
